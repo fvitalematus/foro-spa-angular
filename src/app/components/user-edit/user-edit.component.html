@@ -4,12 +4,12 @@
     <hr />
     <!-- MENSAJE DE ALERTA SUCCESS-->
     <div class="alert alert-success col-md-5 mt-3" *ngIf="status == 'success'">
-        El registro se ha completado correctamente,
-        <a [routerLink]="['/login']">Identificate aquí</a>
+        Se han guardado los cambios correctamente,
+        <a [routerLink]="['/inicio']">Ir al Foro</a>
     </div>
     <!-- MENSAJE DE ALERTA ERROR-->
     <div class="alert alert-danger col-md-5 mt-3" *ngIf="status == 'error'">
-        El registro no se ha completado correctamente.
+        Los datos ingresados correctamente.
     </div>
 
     <!-- FORMULARIO DE REGISTRO -->
@@ -46,12 +46,12 @@
             </small>
         </div>
         <!-- Contraseña -->
-        <div class="form-group">
+        <div class="form-group">            
             <label for="avatar">Avatar</label>
             <angular-file-uploader 
             [config]="afuConfig" 
             [resetUpload]=resetVar 
-            (ApiResponse)="avatarUpload($event)">            
+            (ApiResponse)="avatarUpload($event)">         
             </angular-file-uploader>
         </div>
 

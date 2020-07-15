@@ -19,7 +19,6 @@ export class UserEditComponent implements OnInit {
   public afuConfig;
   public url;
 
-
   constructor(
     private _router: Router,
     private _route: ActivatedRoute,
@@ -39,14 +38,24 @@ export class UserEditComponent implements OnInit {
         url: this.url + "upload-avatar",
         method: "POST",
         headers: {
-          Authorization: this.token
+          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+          "Authorization": this.token
         }
       },
       theme: "attachPin",
       hideProgressBar: false,
       hideResetBtn: true,
       hideSelectBtn: false,
-      attachPinText: 'Sube tu Foto de Perfil'
+      replaceTexts: {
+        selectFileBtn: 'Select Files',
+        resetBtn: 'Reset',
+        uploadBtn: 'Upload',
+        dragNDropBox: 'Drag N Drop',
+        attachPinBtn: 'Sube tu Foto de Perfil',
+        afterUploadMsg_success: 'Successfully Uploaded !',
+        afterUploadMsg_error: 'Upload Failed !',
+        sizeLimit: 'Size Limit'
+      }
     };
 
   }
@@ -61,7 +70,21 @@ export class UserEditComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit(form) {
+  onSubmit() {
+    this._userService.update(this.user).subscribe(
+      response => {
+        if (!response.user) {
+          this.status = 'error';
+        } else {
+          this.status = 'success';
+          localStorage.setItem('identity', JSON.stringify(this.user));
+        }
+      },
+      error => {
+        this.status = 'error';
+        console.log(error);
+      }
+    );
   }
 
 }
