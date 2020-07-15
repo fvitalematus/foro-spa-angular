@@ -14,7 +14,6 @@ export class UserService {
         private _http: HttpClient
     ) {
         this.url = global.url;
-
     }
 
     prueba() {
