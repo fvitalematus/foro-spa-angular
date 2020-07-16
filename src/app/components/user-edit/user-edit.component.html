@@ -13,8 +13,7 @@
     </div>
 
     <!-- FORMULARIO DE REGISTRO -->
-    <form class="col-md-5 ml-0 pl-0" #userEditForm="ngForm" (ngSubmit)="onSubmit(
-        userEditForm)">
+    <form class="col-md-5 ml-0 pl-0" #userEditForm="ngForm" (ngSubmit)="onSubmit(userEditForm)">
         <!-- Nombres -->
         <div class="form-group">
             <label for="name">Nombre</label>
@@ -46,12 +45,9 @@
             </small>
         </div>
         <!-- Contraseña -->
-        <div class="form-group">            
+        <div class="form-group">
             <label for="avatar">Avatar</label>
-            <angular-file-uploader 
-            [config]="afuConfig" 
-            [resetUpload]=resetVar 
-            (ApiResponse)="avatarUpload($event)">         
+            <angular-file-uploader [config]="afuConfig" [resetUpload]=resetVar (ApiResponse)="avatarUpload($event)">
             </angular-file-uploader>
         </div>
 

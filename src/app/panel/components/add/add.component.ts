@@ -18,6 +18,7 @@ export class AddComponent implements OnInit {
   public identity;
   public token;
   public status;
+  public is_edit;
 
   constructor(
     private _route: ActivatedRoute,
@@ -29,6 +30,7 @@ export class AddComponent implements OnInit {
     this.identity = this._userService.getIdentity();
     this.token = this._userService.getToken();
     this.topic = new Topic('', '', '', '', '', '', this.identity._id, null);
+    this.is_edit = true;  
   }
 
   ngOnInit(): void {

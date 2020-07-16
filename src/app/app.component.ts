@@ -12,7 +12,7 @@ import { global } from './services/global';
 })
 // Implements OnInit y DoCheck: Hooks, ejecutan procesos (Eventos) que detectan al componente.
 export class AppComponent implements OnInit, DoCheck {
-  public title = 'Foro SPA Angular';
+  public title = 'Foro SPA Angular';  
   public identity;
   public token;
   public url;

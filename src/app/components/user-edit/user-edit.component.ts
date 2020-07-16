@@ -13,7 +13,7 @@ import { global } from '../../services/global';
 export class UserEditComponent implements OnInit {
   public page_title: string;
   public user: User;
-  public status: string;
+  public status;
   public identity;
   public token;
   public afuConfig;
