@@ -9,6 +9,7 @@ import { global } from '../../services/global';
   templateUrl: './user-edit.component.html',
   styleUrls: ['./user-edit.component.css'],
   providers: [UserService]
+
 })
 export class UserEditComponent implements OnInit {
   public page_title: string;

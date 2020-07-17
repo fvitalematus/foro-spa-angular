@@ -19,38 +19,37 @@
                 <td>
                     <a [routerLink]="['/panel/editar', topic._id]" class="
                     btn btn-sm btn-outline-info mr-2">Editar</a>
+                    
                     <!-- Button to Open the Modal -->
-                    <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="
-                    modal" [attr.data-target]="'#modal'+topic._id">
+                    <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal"
+                        data-target="#myModal"><!--[attr.data-target]="'#modal' + topic._id"-->                        
                         Borrar
                     </button>
 
                     <!-- The Modal -->
-                    <div class="modal" id="{{ 'modal' + topic._id }}">
+                    <div class="modal" id="myModal"><!--"{{ 'modal' + topic._id }}"-->                        
                         <div class="modal-dialog">
                             <div class="modal-content">
-
                                 <!-- Modal Header -->
                                 <div class="modal-header">
-                                    <h4 class="modal-title">¿Estás seguro de querer eliminar este tema?</h4>
+                                    <h4 class="modal-title">¿Estás seguro de eliminar este tema?</h4>
                                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                                 </div>
-
                                 <!-- Modal body -->
                                 <div class="modal-body">
-                                    Vas a borrar el tema {{topic.title}} para siempre...
+                                    Vas a borrar el tema "{{topic.title}}" para siempre...
                                 </div>
-
                                 <!-- Modal footer -->
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-info" data-dismiss="
-                                    modal">Cancelar</button>
-                                    <a (click)="deleteTopic(topic._id)" type="button" class="btn btn-danger"
+                                    <button type="button" class="btn btn-info" data-dismiss="modal">Cancelar</button>
+                                    <a (click)="deleteTopic(topicId._id)" type="button" class="btn btn-danger"
                                         data-dismiss="modal">Borrar</a>
                                 </div>
+
                             </div>
                         </div>
                     </div>
+
 
                 </td>
             </tr>
