@@ -5,15 +5,15 @@
     <ul class="list-group list-topics">
         <li class="list-group-item" *ngFor="let topic of topics">
             <h5>
-                <a [routerLink]="['/inicio']">{{topic.title}}</a>
+                {{topic.title}}
             </h5>
-            <span class="badge badge-link">
+            <span class="badge badge-primary">
                 {{ topic.user.name + ' ' + topic.user.surname }}
             </span>
             <span class="badge badge-light ml-2">
                 {{ topic.date | amLocale: 'es' | amTimeAgo }}
             </span>
-            <a [routerLink]="['/inicio']" class="btn btn-sm btn-success float-right mx-auto
+            <a [routerLink]="['/tema', topic._id]" class="btn btn-sm btn-success float-right mx-auto
             d-block">Leer</a>
         </li>
     </ul>
