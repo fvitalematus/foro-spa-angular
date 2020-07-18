@@ -2,11 +2,11 @@
     <h3>{{ page_title }}</h3>
     <hr />
 
-    <table class="table table-hover text-center">
+    <table class="table table-hover">
         <thead class="thead-default">
             <tr>
                 <th>Titulo</th>
-                <th>Lenguaje</th>
+            <!--<th>Lenguaje</th>-->
                 <th>Fecha</th>
                 <th>Acciones</th>
             </tr>
@@ -14,18 +14,17 @@
         <tbody>
             <tr *ngFor="let topic of topics">
                 <td>{{topic.title}}</td>
-                <td>{{topic.lang}}</td>
+            <!--<td>{{topic.lang}}</td>--> 
                 <td>{{ topic.date | amLocale: 'es' | amDateFormat:'LL' }}</td>
                 <td>
                     <a [routerLink]="['/panel/editar', topic._id]" class="
                     btn btn-sm btn-outline-info mr-2">Editar</a>
-                    
+
                     <!-- Button to Open the Modal -->
                     <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal"
                         data-target="#myModal"><!--[attr.data-target]="'#modal' + topic._id"-->                        
                         Borrar
                     </button>
-
                     <!-- The Modal -->
                     <div class="modal" id="myModal"><!--"{{ 'modal' + topic._id }}"-->                        
                         <div class="modal-dialog">
@@ -43,16 +42,16 @@
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-info" data-dismiss="modal">Cancelar</button>
                                     <a (click)="deleteTopic(topicId._id)" type="button" class="btn btn-danger"
-                                        data-dismiss="modal">Borrar</a>
+                                        data-dismiss="modal">Borrar</a>                                        
                                 </div>
-
-                            </div>
-                        </div>
-                    </div>
-
+                                                                
+                            </div>                                                    
+                        </div>                                              
+                    </div>                                        
 
                 </td>
             </tr>
         </tbody>
     </table>
+    
 </div>

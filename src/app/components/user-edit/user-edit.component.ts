@@ -71,7 +71,7 @@ export class UserEditComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit() {
+  onSubmit(form) {
     this._userService.update(this.user).subscribe(
       response => {
         if (!response.user) {
