@@ -22,11 +22,11 @@
 
                     <!-- Button to Open the Modal -->
                     <button type="button" class="btn btn-sm btn-outline-danger" data-toggle="modal"
-                        data-target="#myModal"><!--[attr.data-target]="'#modal' + topic._id"-->                        
+                    [attr.data-target]="'#modal' + topic._id">                   
                         Borrar
                     </button>
                     <!-- The Modal -->
-                    <div class="modal" id="myModal"><!--"{{ 'modal' + topic._id }}"-->                        
+                    <div class="modal" id="{{ 'modal' + topic._id }}">                       
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <!-- Modal Header -->
@@ -41,8 +41,8 @@
                                 <!-- Modal footer -->
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-info" data-dismiss="modal">Cancelar</button>
-                                    <a (click)="deleteTopic(topicId._id)" type="button" class="btn btn-danger"
-                                        data-dismiss="modal">Borrar</a>                                        
+                                    <a (click)="deleteTopic(topic._id)" type="button" class="btn btn-danger"
+                                        data-dismiss="modal">Borrar</a>
                                 </div>
                                                                 
                             </div>                                                    

@@ -1,6 +1,7 @@
 // IMPORTS DE ANGULAR
 import { NgModule, createPlatform } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { UserGuard } from '../services/user.guard';
 
 // IMPORTS COMPONENTS HIJOS (CHILDREN)
 import { MainComponent } from './components/main/main.component';
@@ -12,6 +13,7 @@ const panelRoutes: Routes = [
     {
         path: 'panel',
         component: MainComponent,
+        canActivate: [UserGuard],
         children: [
             { path: '', component: ListComponent },
             { path: 'listado', component: ListComponent },

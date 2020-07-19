@@ -8,6 +8,11 @@ import { AngularFileUploaderModule } from "angular-file-uploader";
 import { MomentModule } from 'angular2-moment';
 import { NgxHighlightJsModule } from '@nowzoo/ngx-highlight-js';
 
+// Servicios
+import { UserService } from './services/user.service';
+import { UserGuard } from './services/user.guard';
+import { NoIdentityGuard } from './services/no.identity.guard';
+
 // IMPORTS COMPONENTS PADRES
 import { PanelModule } from './panel/panel.module';
 
@@ -40,7 +45,10 @@ import { TopicDetailComponent } from './components/topic-detail/topic-detail.com
     NgxHighlightJsModule.forRoot()
   ],
   providers: [
-    appRoutingProviders
+    appRoutingProviders,
+    UserService,
+    UserGuard,
+    NoIdentityGuard
   ],
   bootstrap: [AppComponent]
 })
