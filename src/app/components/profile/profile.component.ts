@@ -14,7 +14,7 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
   providers: [UserService, TopicService]
 })
 export class ProfileComponent implements OnInit {
-
+  
   public user: User;
   public topic: Topic[];
   public url: string;
