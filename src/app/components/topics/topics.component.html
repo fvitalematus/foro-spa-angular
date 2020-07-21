@@ -26,7 +26,7 @@
 
     <!-- NAVEGACIÓN DE PAGINACIÓN -->
 
-    <ul class="pagination mt-2">
+    <ul class="pagination mt-2" *ngIf="!no_paginate">
 
         <li class="page-item">
             <a class="page-link" [routerLink]="['/temas', prev_page]">&laquo;</a>
