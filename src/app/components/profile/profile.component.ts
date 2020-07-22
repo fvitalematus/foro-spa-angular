@@ -16,7 +16,7 @@ import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 export class ProfileComponent implements OnInit {
   
   public user: User;
-  public topic: Topic[];
+  public topics: Topic[];
   public url: string;
 
   constructor(
@@ -57,7 +57,7 @@ export class ProfileComponent implements OnInit {
     this._topicService.getTopicsByUser(userId).subscribe(
       response => {
         if (response.topics) {
-          this.topic = response.topics;
+          this.topics = response.topics;
         }
       },
       error => {
