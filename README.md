@@ -8,18 +8,16 @@
 
 Este repositorio incluye: Desarrollo de una Web App SPA con el framework Angular 10, con el objetivo de crear una aplicación de un Foro. Primero se realizará el backend con Node JS y luego el frontend con Angular.
 
-- Modelos y Componentes: Login y Registro.
-- Routing y Menús: Configuración.
-- Registro de Usuarios: Formulario con HTML, Bootsrap y Angular. Servicio de usuarios
-- Login de Usuarios: Formulario, identificación, Persistir, Mostrar datos y Cerrar Sesión
-- Ajustes de Usuarios: Componente, Formulario, Actualizar datos, Editor de texto enriquecido, Subir y mostrar avatar desde el front-end.
-- Categorías en el Front-end: Componente, Vista, Formulario, Guardar y listar categorías.
-- Creación de Entradas: Página, Componente, Formulario, Selector, Servicio Posts y Guardar entradas en la base de datos desde el front-end.
-- Listado de Entradas: Conseguir, listar, Mostrar Imagenes y botones en los Posts.
-- Pagina de detalle de la Entrada: Componente, Conseguir datos y mostrar detalle del Post.
-- Edición de Entradas: Componente para editar posts, Editar y Guardar entrada editada.
-- Borrado de Entradas: Borrar entradas y Modals de Bootsrap 4.
-- Entradas y Categorías: Metodos, componente de listado, detalle y botones  de categorías.
+- Modelo de Usuarios: Temas y Comentarios.
+- Componentes y Routing: Menú y barra de navegación. Configuración de RUTAS y Página de inicio. Enlaces.
+- Registro de Usuarios: Formulario con HTML, Bootsrap y Angular. Servicio de usuarios. Método.
+- Login de Usuarios: Formulario, identificación, Persistir, Mostrar datos y Cerrar Sesión.
+- Ajustes de Usuarios: Página de Ajustes, Formulario, Actualizar datos, Editor de texto enriquecido, Subir y mostrar avatar desde el front-end.
+- Panel de Usuario: Componente, Configuración de RUTAS, Maquetación, Componente, Formulario, Servicio, Crear, Guardar y Listado de Temas.
+- Temas del Foro: Página y Listado de temas paginado.
+- Página individual de los temas: Componente de detalle, sacar datos de temas, maquetar páginas.
+- 
+
 - Mejoras en el blog de Laravel y Angular: Guardar rutas, mejoras redirección en las entradas.
 - Perfiles de Usuarios en el Blog SPA con Angular: Página de perfil de usuarios, mostrar datos y mejoras en los perfiles.
 
