@@ -16,10 +16,13 @@ Este repositorio incluye: Desarrollo de una Web App SPA con el framework Angular
 - Panel de Usuario: Componente, Configuración de RUTAS, Maquetación, Componente, Formulario, Servicio, Crear, Guardar y Listado de Temas.
 - Temas del Foro: Página y Listado de temas paginado.
 - Página individual de los temas: Componente de detalle, sacar datos de temas, maquetar páginas.
-- 
+- Sistema de comentarios: Formulario, Servicio, de comentarios. Añadir y listar temas. Popular y Mejoras. Eliminar comentarios.
+- Guard de RUTAS con Angular: Proteger secciones de la Web y Guards para Login y Registro.
+- Sección Compañeros: Componente de compañeros, Servicio y componente de usuarios y Listado de Compañeros.
+- Perfiles de Usuarios: Componente de Perfil de Usuario y Mostrar datos.
+- Buscador del Foro: Componente del buscador, Mejoras en el populate y Formulario del buscador del Foro.
+- Mejoras en el Foro de Node JS y Angular: Guardar rutas, mejoras redirección en las entradas.
 
-- Mejoras en el blog de Laravel y Angular: Guardar rutas, mejoras redirección en las entradas.
-- Perfiles de Usuarios en el Blog SPA con Angular: Página de perfil de usuarios, mostrar datos y mejoras en los perfiles.
 
 JSON de configuración
 
