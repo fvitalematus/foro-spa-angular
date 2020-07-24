@@ -30,6 +30,15 @@ Portfolio: Angular 10.
 
 Curso de Angular 10 | Nombre: Franco Vitale M. | franco.vitalematus@gmail.com
 
+# Foro SPA Angular: Inicio
+
+![Foro angular 1](https://user-images.githubusercontent.com/66401629/88359263-0133e280-cd40-11ea-87ff-0778671dbab7.jpg)
+
+# Foro SPA Angular: Panel de Usuario
+
+![Foro angular 2](https://user-images.githubusercontent.com/66401629/88359273-0a24b400-cd40-11ea-928a-857587a16c70.jpg)
+
+
 # Foro SPA Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
